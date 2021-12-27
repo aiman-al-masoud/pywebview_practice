@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script src="index.js"></script>
+   
+    <link rel="stylesheet" href="index.css">
+
+
+
+</head>
+
+
+
+<body>
+
+    <h1>Choose a color:</h1>
+    <br>
+    <input type="color" name="" id="color_chooser" onchange="onColorSelect()">
+    <br>
+    <h1>Choose a file:</h1>
+    <input type="button" value="Choose File" onclick="onFileChooser()">
+    <br>
+    <h1>Choose a feline:</h1>
+    
+    <br>
+
+    <div id="radio_div" onchange="onRadioChanged()">
+        <label for="cat">cat</label>
+        <input type="radio" name="feline" id="cat">
+        <label for="puma">puma</label>
+        <input type="radio" name="feline" id="puma">
+        <label for="caracal">caracal</label>
+        <input type="radio" name="feline" id="caracal">
+    </div>
+
+
+    <br>
+
+    <h1>Choose a date:</h1>
+
+    <input type="date" name="" id="">
+
+    <br>
+
+    <h1>Select from slider:</h1>
+    <input type="range" name="" id="" min="" max="">
+
+
+    <br>
+
+    <h1>Checkbox:</h1>
+    <input type="checkbox" name="" id="">
+
+
+    <br>
+    <h1>Password</h1>
+    <input type="password" name="" id="">
+
+    <h1>Bye bye tedious panels:</h1>
+    <br>
+    <a href="new_page.html">Go to another page</a>
+
+    <br>
+    <h1>This is an image:</h1>
+    <img src="./static/lunaSterratoPiccola.jpg" alt="" width="400">
+
+    <br>
+
+    <h1>Play sounds:</h1>
+
+    <input type="button" value="play" onclick="playASound()">
+
+    <br>
+    <h1>Time:</h1>
+    <input type="time" name="" id="">
+
+    <br>
+
+
+    <h1>Drop-down menu here:</h1>
+    <select id="drop_down" onchange="onDropDownChanged()">
+        <option>The First Option</option>
+        <option>Another One</option>
+        <option>Bunch of Options Here</option>
+    </select>
+
+
+    <h1>Try hovering over this image:</h1>
+    <img src="./static/lunaSterratoPiccola.jpg" alt="" onmouseenter="onMouseEnterImage()">
+
+    <br>
+    <h1>Try hovering over each of these words:</h1>
+    <div style="display: flex; justify-content: space-between;">
+    {% for word in words %}
+    
+    <p id={{loop.index}} onmouseenter="onMouseEnterWord()">{{word}}</p> 
+    
+    {% endfor %}
+    </div>
+
+
+    
+    
+    <p id="tooltip" display="none" hidden></p>
+  
+
+
+
+</body>
+</html>

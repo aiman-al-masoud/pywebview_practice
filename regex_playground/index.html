@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+   
+    
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h2 id="title" class="glow">Enter a pattern and some text to match it:</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label  class="glow" for="pattern">Pattern:</label>
+    <input   type="text" name="" id="pattern_field" oninput="onChange()" onchange="document.getElementById('string_field').focus()" >
+    <br>
+    <label class="glow" for="string">String:</label>
+    <input   type="text" name="" id="string_field"  oninput="onChange()"    onchange="document.getElementById('pattern_field').focus()">
+    <br>
+    <br>
+    <img  id="outcome_image" hidden display="none" src="" alt="" width="100">
+
+
+    <br>
+
+
+
+    <a  href="about.html">About</a>
+    <a   href="shortcuts.html">Shortcuts</a>
+
+    <script src="index.js"></script>
+</body>
+
+
+</html>
