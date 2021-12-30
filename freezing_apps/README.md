@@ -1,4 +1,4 @@
-Intsall the pyinstaller module
+Install the pyinstaller module
 
 ```
 $ pip install pyinstaller
