@@ -14,7 +14,7 @@ main.py
 Run this command (It may take a while):
 
 ```
-pyinstaller main.py --onefile --icon=="icon.ico"
+$ pyinstaller main.py --onefile --icon=="icon.ico"
 ```
 
 You should be able to find and run your single executable file in the dist directory that was just created:
