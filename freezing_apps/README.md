@@ -31,6 +31,31 @@ The executable's size may be very large (hundreds of MBs). But it should work wi
 This method was tested and works with Pywebview (tried it on Linux).
 
 
+To include resource files use the --add-data parameter:
+
+```
+pyinstaller --onefile --add-data ".:." main.py
+```
+In this case I'm including everything in the same directory as main.py.
+
+Syntax:
+
+```
+{source_path}{os_separator}{tmp_runtime_dest_path}
+```
+
+Separators:
+
+* Linux/Mac
+: (Colon)
+* Windows
+; (Semicolon)
+
+
+Source: 
+
+https://stackoverflow.com/questions/41870727/pyinstaller-adding-data-files
+
 
 
 
